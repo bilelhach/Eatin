@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var monLabel: UILabel!
+    @IBOutlet weak var monChamp: UITextField!
 
+    @IBOutlet weak var monbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func actionBtn(_ sender: UIButton) {
+        self.monChamp.text = "kikoo dounia"
+    }
+  
+    @IBAction func sauvegarder(_ sender: UIButton) {
+   
+    }
+    
 
 }
 
